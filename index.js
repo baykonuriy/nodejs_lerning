@@ -25,7 +25,7 @@ const searchPrimeNumber = () => {
         arr = arr.filter((elem) => {
             return checkThisNumber(Number(elem))
         })
-        
+
         arr.forEach((elem, index) => {
             switch(Number(counter)){
                 case 0:
@@ -42,6 +42,9 @@ const searchPrimeNumber = () => {
                     break
             }
         })
+        if(arr.length === 0){
+            console.log('not number')
+        }
     } else{
         return console.error(colors.red(`This "${start}, ${end}" arguments not number`))
     }
