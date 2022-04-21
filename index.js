@@ -43,7 +43,7 @@ const searchPrimeNumber = () => {
             }
         })
         if(arr.length === 0){
-            console.log('not number')
+            console.log('not a number')
         }
     } else{
         return console.error(colors.red(`This "${start}, ${end}" arguments not number`))
